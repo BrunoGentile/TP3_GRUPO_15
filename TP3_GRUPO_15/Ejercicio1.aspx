@@ -35,6 +35,21 @@
         .auto-style8 {
             height: 23px;
         }
+        .auto-style9 {
+            width: 38px;
+            height: 33px;
+        }
+        .auto-style10 {
+            width: 151px;
+            height: 33px;
+        }
+        .auto-style11 {
+            width: 223px;
+            height: 33px;
+        }
+        .auto-style12 {
+            height: 33px;
+        }
     </style>
 </head>
 <body>
@@ -64,9 +79,11 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">Nombre de Localidad:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLocalidades" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidades">Ingrese localidad</asp:RequiredFieldValidator>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -124,7 +141,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">Nombre de usuario:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -135,7 +152,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">Contraseña:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtContrasenia" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -176,17 +193,17 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">Localidades:</td>
-                <td class="auto-style3">
+                <td class="auto-style9"></td>
+                <td class="auto-style10">Localidades:</td>
+                <td class="auto-style11">
                     <asp:DropDownList ID="ddlLocalidades" runat="server" Height="19px" Width="184px">
                         <asp:ListItem Value="0">--Seleccione una localidad--</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style12"></td>
+                <td class="auto-style12"></td>
+                <td class="auto-style12"></td>
+                <td class="auto-style12"></td>
             </tr>
             <tr>
                 <td class="auto-style5"></td>
@@ -220,7 +237,7 @@
             <tr>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">
-                    <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" />
+                    <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" OnClick="btnInicio_Click" />
                 </td>
                 <td class="auto-style3">&nbsp;</td>
                 <td>&nbsp;</td>
