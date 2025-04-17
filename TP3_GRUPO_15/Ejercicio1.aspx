@@ -50,6 +50,21 @@
         .auto-style12 {
             height: 33px;
         }
+        .auto-style13 {
+            width: 38px;
+            height: 26px;
+        }
+        .auto-style14 {
+            width: 151px;
+            height: 26px;
+        }
+        .auto-style15 {
+            width: 223px;
+            height: 26px;
+        }
+        .auto-style16 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -76,17 +91,17 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">Nombre de Localidad:</td>
-                <td class="auto-style3">
+                <td class="auto-style13"></td>
+                <td class="auto-style14">Nombre de Localidad:</td>
+                <td class="auto-style15">
                     <asp:TextBox ID="txtLocalidades" runat="server"></asp:TextBox>
                 </td>
-                <td>
+                <td class="auto-style16">
                     <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidades">Ingrese localidad</asp:RequiredFieldValidator>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style16"></td>
+                <td class="auto-style16"></td>
+                <td class="auto-style16"></td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -171,26 +186,30 @@
                 <td class="auto-style8"></td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">Correo electronico:</td>
-                <td class="auto-style3">
+                <td class="auto-style13"></td>
+                <td class="auto-style14">Correo electronico:</td>
+                <td class="auto-style15">
                     <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style16">
+                    <asp:RequiredFieldValidator ID="RFV_Email" runat="server" ControlToValidate="txtEmail" ErrorMessage="Coloque su email" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
+                    <br />
+                    <asp:RegularExpressionValidator ID="REV_Email" runat="server" ControlToValidate="txtEmail" ErrorMessage="Escriba correctamente su email" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+                </td>
+                <td class="auto-style16"></td>
+                <td class="auto-style16"></td>
+                <td class="auto-style16"></td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">CP:</td>
-                <td class="auto-style3">
+                <td class="auto-style13"></td>
+                <td class="auto-style14">CP:</td>
+                <td class="auto-style15">
                     <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style16"></td>
+                <td class="auto-style16"></td>
+                <td class="auto-style16"></td>
+                <td class="auto-style16"></td>
             </tr>
             <tr>
                 <td class="auto-style9"></td>
