@@ -104,13 +104,13 @@
                 <td class="auto-style16"></td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -223,7 +223,7 @@
                         <asp:ListItem Value="0">--Seleccione una localidad--</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style12"></td>
                 <td class="auto-style12"></td>
                 <td class="auto-style12"></td>
                 <td class="auto-style12"></td>
@@ -241,21 +241,23 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupo2" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupo2" OnClick="btnGuardarUsuario_Click" />
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="LBL_WelcomeUser" runat="server"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>

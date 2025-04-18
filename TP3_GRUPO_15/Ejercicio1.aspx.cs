@@ -26,5 +26,11 @@ namespace TP3_GRUPO_15
                 txtNombre.Text = txtNombre.Text.Substring(0, 1).ToUpper() + txtNombre.Text.Substring(1).ToLower();
             }
         }
+
+        protected void btnGuardarUsuario_Click(Object sender, EventArgs e)
+        {
+            LBL_WelcomeUser.Font.Bold = true;
+            LBL_WelcomeUser.Text = "Bienvenido " + txtNombre.Text;
+        }
     }
 }
