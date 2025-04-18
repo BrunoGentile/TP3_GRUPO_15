@@ -156,7 +156,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">Nombre de usuario:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtNombre" runat="server" ValidationGroup="grupo2"></asp:TextBox>
+                    <asp:TextBox ID="txtNombre" runat="server" ValidationGroup="grupo2" OnTextChanged="txtNombre_TextChanged"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ValidationGroup="grupo2">Ingrese un usuario</asp:RequiredFieldValidator>
