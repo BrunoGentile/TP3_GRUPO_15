@@ -94,10 +94,10 @@
                 <td class="auto-style13"></td>
                 <td class="auto-style14">Nombre de Localidad:</td>
                 <td class="auto-style15">
-                    <asp:TextBox ID="txtLocalidades" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLocalidades" runat="server" ValidationGroup="grupo1"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
-                    <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidades">Ingrese localidad</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidades" ValidationGroup="grupo1">Ingrese localidad</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>
@@ -116,7 +116,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " />
+                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " ValidationGroup="grupo1" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -156,9 +156,11 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">Nombre de usuario:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtNombre" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ValidationGroup="grupo2">Ingrese un usuario</asp:RequiredFieldValidator>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -167,7 +169,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">Contraseña:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtContrasenia" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtContrasenia" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -178,7 +180,7 @@
                 <td class="auto-style5"></td>
                 <td class="auto-style6">Repetir contraseña:</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="txtRepContrasenia" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtRepContrasenia" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style8"></td>
                 <td class="auto-style8"></td>
@@ -189,12 +191,12 @@
                 <td class="auto-style13"></td>
                 <td class="auto-style14">Correo electronico:</td>
                 <td class="auto-style15">
-                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
-                    <asp:RequiredFieldValidator ID="RFV_Email" runat="server" ControlToValidate="txtEmail" ErrorMessage="Coloque su email" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RFV_Email" runat="server" ControlToValidate="txtEmail" ErrorMessage="Coloque su email" ForeColor="#CC0000" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
                     <br />
-                    <asp:RegularExpressionValidator ID="REV_Email" runat="server" ControlToValidate="txtEmail" ErrorMessage="Escriba correctamente su email" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="REV_Email" runat="server" ControlToValidate="txtEmail" ErrorMessage="Escriba correctamente su email" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="grupo2">*</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>
@@ -204,7 +206,7 @@
                 <td class="auto-style13"></td>
                 <td class="auto-style14">CP:</td>
                 <td class="auto-style15">
-                    <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtCp" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>
@@ -215,7 +217,7 @@
                 <td class="auto-style9"></td>
                 <td class="auto-style10">Localidades:</td>
                 <td class="auto-style11">
-                    <asp:DropDownList ID="ddlLocalidades" runat="server" Height="19px" Width="184px">
+                    <asp:DropDownList ID="ddlLocalidades" runat="server" Height="19px" Width="184px" ValidationGroup="grupo2">
                         <asp:ListItem Value="0">--Seleccione una localidad--</asp:ListItem>
                     </asp:DropDownList>
                 </td>
@@ -237,7 +239,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupo2" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
