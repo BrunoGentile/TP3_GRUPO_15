@@ -169,7 +169,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">Contraseña:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtContrasenia" runat="server" ValidationGroup="grupo2"></asp:TextBox>
+                    <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -180,7 +180,7 @@
                 <td class="auto-style5"></td>
                 <td class="auto-style6">Repetir contraseña:</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="txtRepContrasenia" runat="server" ValidationGroup="grupo2"></asp:TextBox>
+                    <asp:TextBox ID="txtRepContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style8"></td>
                 <td class="auto-style8"></td>
