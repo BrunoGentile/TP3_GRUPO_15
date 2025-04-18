@@ -208,7 +208,9 @@
                 <td class="auto-style15">
                     <asp:TextBox ID="txtCp" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
-                <td class="auto-style16"></td>
+                <td class="auto-style16">
+                    <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ValidationExpression="\d{4}">RegularExpressionValidator</asp:RegularExpressionValidator>
+                </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>
@@ -221,7 +223,7 @@
                         <asp:ListItem Value="0">--Seleccione una localidad--</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style12"></td>
+                <td class="auto-style12">&nbsp;</td>
                 <td class="auto-style12"></td>
                 <td class="auto-style12"></td>
                 <td class="auto-style12"></td>
