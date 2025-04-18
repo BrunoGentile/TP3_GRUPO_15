@@ -50,21 +50,6 @@
         .auto-style12 {
             height: 33px;
         }
-        .auto-style13 {
-            width: 38px;
-            height: 26px;
-        }
-        .auto-style14 {
-            width: 151px;
-            height: 26px;
-        }
-        .auto-style15 {
-            width: 223px;
-            height: 26px;
-        }
-        .auto-style16 {
-            height: 26px;
-        }
     </style>
 </head>
 <body>
@@ -118,7 +103,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " ValidationGroup="grupo1" />
+                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -243,11 +228,9 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupo2" OnClick="btnGuardarUsuario_Click" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
                 </td>
-                <td>
-                    <asp:Label ID="LBL_WelcomeUser" runat="server"></asp:Label>
-                </td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
