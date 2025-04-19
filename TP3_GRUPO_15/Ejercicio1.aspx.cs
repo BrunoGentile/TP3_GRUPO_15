@@ -18,5 +18,23 @@ namespace TP3_GRUPO_15
         {
             Response.Redirect("Inicio.aspx");
         }
+
+        protected void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrEmpty(txtNombre.Text))
+            {
+                txtNombre.Text = txtNombre.Text.Substring(0, 1).ToUpper() + txtNombre.Text.Substring(1).ToLower();
+            }
+
+        }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            LBL_WelcomeUser.Font.Bold = true;
+            LBL_WelcomeUser.Text = "Bienvenido " + txtNombre.Text;
+        }
     }
+
+
 }

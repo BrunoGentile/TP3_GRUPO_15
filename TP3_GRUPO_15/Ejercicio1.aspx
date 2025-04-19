@@ -159,7 +159,7 @@
                     <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtRepContrasenia" ErrorMessage="*">las contraseñas no coinciden</asp:CompareValidator>
+                    <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtRepContrasenia" ErrorMessage="*" ValidationGroup="grupo2">las contraseñas no coinciden</asp:CompareValidator>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -198,7 +198,7 @@
                     <asp:TextBox ID="txtCp" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
-                    <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ValidationExpression="\d{4}">RegularExpressionValidator</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ValidationExpression="\d{4}" ValidationGroup="grupo2">RegularExpressionValidator</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>
@@ -230,9 +230,11 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                    <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" ValidationGroup="grupo2" />
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="LBL_WelcomeUser" runat="server"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

@@ -186,6 +186,15 @@ namespace TP3_GRUPO_15
         protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
 
         /// <summary>
+        /// Control LBL_WelcomeUser.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LBL_WelcomeUser;
+
+        /// <summary>
         /// Control btnInicio.
         /// </summary>
         /// <remarks>
