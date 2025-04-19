@@ -82,13 +82,13 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style13"></td>
@@ -98,6 +98,8 @@
                 </td>
                 <td class="auto-style16">
                     <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidades" ValidationGroup="grupo1">Ingrese localidad</asp:RequiredFieldValidator>
+                    <br />
+                    <asp:RegularExpressionValidator ID="REV_Localidad" runat="server" ControlToValidate="txtLocalidades" ValidationExpression="^[A-Za-zÁÉÍÓÚáéíóúÜüÑñ0-9 ]+$" ValidationGroup="grupo1">Ingrese una localidad válida</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>

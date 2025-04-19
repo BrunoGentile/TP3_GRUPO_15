@@ -51,6 +51,15 @@ namespace TP3_GRUPO_15
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
 
         /// <summary>
+        /// Control REV_Localidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REV_Localidad;
+
+        /// <summary>
         /// Control Btn_Localidad.
         /// </summary>
         /// <remarks>
