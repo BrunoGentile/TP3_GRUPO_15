@@ -69,15 +69,6 @@ namespace TP3_GRUPO_15
         protected global::System.Web.UI.WebControls.Button Btn_Localidad;
 
         /// <summary>
-        /// Control lblMensaje.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensaje;
-
-        /// <summary>
         /// Control lblUsuarios.
         /// </summary>
         /// <remarks>
@@ -112,6 +103,15 @@ namespace TP3_GRUPO_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContrasenia;
+
+        /// <summary>
+        /// Control cvContrasenia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvContrasenia;
 
         /// <summary>
         /// Control txtRepContrasenia.
@@ -184,15 +184,6 @@ namespace TP3_GRUPO_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
-
-        /// <summary>
-        /// Control LBL_WelcomeUser.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LBL_WelcomeUser;
 
         /// <summary>
         /// Control btnInicio.

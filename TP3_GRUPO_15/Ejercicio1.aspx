@@ -158,7 +158,9 @@
                 <td class="auto-style3">
                     <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtRepContrasenia" ErrorMessage="*">las contraseñas no coinciden</asp:CompareValidator>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
