@@ -79,7 +79,7 @@
                 <td class="auto-style13"></td>
                 <td class="auto-style14">Nombre de Localidad:</td>
                 <td class="auto-style15">
-                    <asp:TextBox ID="txtLocalidades" runat="server" ValidationGroup="grupo1"></asp:TextBox>
+                    <asp:TextBox ID="txtLocalidades" runat="server" ValidationGroup="grupo1" OnTextChanged="txtLocalidades_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
                     <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidades" ValidationGroup="grupo1">Ingrese localidad</asp:RequiredFieldValidator>
@@ -103,7 +103,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " />
+                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad "  />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

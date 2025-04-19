@@ -34,7 +34,29 @@ namespace TP3_GRUPO_15
             LBL_WelcomeUser.Font.Bold = true;
             LBL_WelcomeUser.Text = "Bienvenido " + txtNombre.Text;
         }
+
+        protected void txtLocalidades_TextChanged(object sender, EventArgs e)
+        {
+            string texto = txtLocalidades.Text.ToLower();
+            char[] caracteres = texto.ToCharArray();
+
+            bool nuevaPalabra = true;
+
+            for (int i = 0; i < caracteres.Length; i++)
+            {
+                if (nuevaPalabra && char.IsLetter(caracteres[i]))
+                {
+                    caracteres[i] = char.ToUpper(caracteres[i]);
+                    nuevaPalabra = false;
+                }
+                else if (caracteres[i] == ' ')
+                {
+                    nuevaPalabra = true;
+                }
+            }
+
+            txtLocalidades.Text = new string(caracteres);
+        }
+
     }
-
-
 }
