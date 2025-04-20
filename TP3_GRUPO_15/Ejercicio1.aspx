@@ -15,7 +15,7 @@
             width: 151px;
         }
         .auto-style3 {
-            width: 223px;
+            width: 255px;
         }
         .auto-style4 {
             width: 38px;
@@ -29,7 +29,7 @@
             height: 23px;
         }
         .auto-style7 {
-            width: 223px;
+            width: 255px;
             height: 23px;
         }
         .auto-style8 {
@@ -44,11 +44,37 @@
             height: 33px;
         }
         .auto-style11 {
-            width: 223px;
+            width: 255px;
             height: 33px;
         }
         .auto-style12 {
             height: 33px;
+        }
+        .auto-style13 {
+            width: 38px;
+            height: 34px;
+        }
+        .auto-style14 {
+            width: 151px;
+            height: 34px;
+        }
+        .auto-style15 {
+            width: 255px;
+            height: 48px;
+        }
+        .auto-style16 {
+            height: 34px;
+        }
+        .auto-style17 {
+            width: 38px;
+            height: 48px;
+        }
+        .auto-style18 {
+            width: 151px;
+            height: 48px;
+        }
+        .auto-style19 {
+            height: 48px;
         }
     </style>
 </head>
@@ -78,7 +104,7 @@
             <tr>
                 <td class="auto-style13"></td>
                 <td class="auto-style14">Nombre de Localidad:</td>
-                <td class="auto-style15">
+                <td class="auto-style3">
                     <asp:TextBox ID="txtLocalidades" runat="server" ValidationGroup="grupo1" OnTextChanged="txtLocalidades_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
@@ -161,6 +187,8 @@
                 <td>
                     <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasenia" ValidationGroup="grupo2">Ingrese una contraseña</asp:RequiredFieldValidator>
                     <br />
+                    <asp:RegularExpressionValidator ID="revContrasenaCorta" runat="server" ControlToValidate="txtContrasenia" ErrorMessage="RegularExpressionValidator" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\S{7,}">Ingrese una contraseña mayor a 6 dígitos</asp:RegularExpressionValidator>
+                    <br />
                     <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtRepContrasenia" ErrorMessage="*" ValidationGroup="grupo2">las contraseñas no coinciden</asp:CompareValidator>
                 </td>
                 <td>&nbsp;</td>
@@ -183,7 +211,7 @@
             <tr>
                 <td class="auto-style13"></td>
                 <td class="auto-style14">Correo electronico:</td>
-                <td class="auto-style15">
+                <td class="auto-style3">
                     <asp:TextBox ID="txtEmail" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
@@ -198,11 +226,11 @@
             <tr>
                 <td class="auto-style13"></td>
                 <td class="auto-style14">CP:</td>
-                <td class="auto-style15">
+                <td class="auto-style3">
                     <asp:TextBox ID="txtCp" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
-                    <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ValidationExpression="\d{4}" ValidationGroup="grupo2">RegularExpressionValidator</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ValidationExpression="\d{4}" ValidationGroup="grupo2">Ingrese un código postal válido</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>
@@ -222,13 +250,13 @@
                 <td class="auto-style12"></td>
             </tr>
             <tr>
-                <td class="auto-style5"></td>
-                <td class="auto-style6"></td>
-                <td class="auto-style7"></td>
-                <td class="auto-style8"></td>
-                <td class="auto-style8"></td>
-                <td class="auto-style8"></td>
-                <td class="auto-style8"></td>
+                <td class="auto-style17"></td>
+                <td class="auto-style18"></td>
+                <td class="auto-style15">&nbsp;</td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
+                <td class="auto-style19"></td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
