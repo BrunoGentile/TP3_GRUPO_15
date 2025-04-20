@@ -103,7 +103,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad "  />
+                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " ValidationGroup="grupo1"  />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -159,6 +159,8 @@
                     <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td>
+                    <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasenia" ValidationGroup="grupo2">Ingrese una contraseña</asp:RequiredFieldValidator>
+                    <br />
                     <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtRepContrasenia" ErrorMessage="*" ValidationGroup="grupo2">las contraseñas no coinciden</asp:CompareValidator>
                 </td>
                 <td>&nbsp;</td>
@@ -171,7 +173,9 @@
                 <td class="auto-style7">
                     <asp:TextBox ID="txtRepContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
-                <td class="auto-style8"></td>
+                <td class="auto-style8">
+                    <asp:RequiredFieldValidator ID="rfvRepContrasenia" runat="server" ControlToValidate="txtRepContrasenia" ValidationGroup="grupo2">Repita la contraseña</asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style8"></td>
                 <td class="auto-style8"></td>
                 <td class="auto-style8"></td>
