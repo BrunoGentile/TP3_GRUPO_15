@@ -213,6 +213,15 @@ namespace TP3_GRUPO_15
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
 
         /// <summary>
+        /// Control RFV_Localidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_Localidad;
+
+        /// <summary>
         /// Control btnGuardarUsuario.
         /// </summary>
         /// <remarks>

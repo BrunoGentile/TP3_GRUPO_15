@@ -246,7 +246,9 @@
                         <asp:ListItem Value="0">--Seleccione una localidad--</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style12"></td>
+                <td class="auto-style12">
+                    <asp:RequiredFieldValidator ID="RFV_Localidad" runat="server" ControlToValidate="ddlLocalidades" ErrorMessage="Selecciona una localidad válida" ForeColor="#CC0000" InitialValue="0" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style12"></td>
                 <td class="auto-style12"></td>
                 <td class="auto-style12"></td>
