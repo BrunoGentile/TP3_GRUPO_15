@@ -63,18 +63,25 @@ namespace TP3_GRUPO_15
             if (Page.IsValid)
             {
                 string localidad = txtLocalidades.Text.Trim();
+                bool yaExiste = false;
 
-                bool LocalidadRepetida = ddlLocalidades.Items
-                    .Cast<ListItem>()
-                    .Any(item => item.Text.Equals(localidad, StringComparison.OrdinalIgnoreCase));
+                foreach (ListItem item in ddlLocalidades.Items)
+                {
+                    if (item.Text.Equals(localidad, StringComparison.OrdinalIgnoreCase))
+                    {
+                        yaExiste = true;
+                        break;
+                    }
+                }
 
-                if (!LocalidadRepetida && !string.IsNullOrEmpty(localidad))
+                if (!yaExiste && !string.IsNullOrEmpty(localidad))
                 {
                     ddlLocalidades.Items.Add(new ListItem(localidad));
                     txtLocalidades.Text = "";
                 }
             }
         }
+
 
         protected void Btn_Localidad_Click(object sender, EventArgs e)
         {
