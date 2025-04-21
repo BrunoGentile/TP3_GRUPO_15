@@ -83,7 +83,7 @@ namespace TP3_GRUPO_15
                     txtLocalidades.Text = "";
                 }
             }
-        }
+
 
 
         protected void Btn_Localidad_Click(object sender, EventArgs e)
