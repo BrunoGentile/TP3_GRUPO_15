@@ -129,7 +129,7 @@
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " ValidationGroup="grupo1"  />
+                    <asp:Button ID="Btn_Localidad" runat="server" Text="Guardar Localidad " ValidationGroup="grupo1" OnClick="Btn_Localidad_Click"  />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -187,7 +187,7 @@
                 <td>
                     <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasenia" ValidationGroup="grupo2">Ingrese una contraseña</asp:RequiredFieldValidator>
                     <br />
-                    <asp:RegularExpressionValidator ID="revContrasenaCorta" runat="server" ControlToValidate="txtContrasenia" ErrorMessage="RegularExpressionValidator" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\S{7,}">Ingrese una contraseña mayor a 6 dígitos</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="revContrasenaCorta" runat="server" ControlToValidate="txtContrasenia" ErrorMessage="RegularExpressionValidator" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\S{6,}">Ingrese una contraseña mayor a 6 dígitos</asp:RegularExpressionValidator>
                     <br />
                     <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtRepContrasenia" ErrorMessage="*" ValidationGroup="grupo2">las contraseñas no coinciden</asp:CompareValidator>
                 </td>
