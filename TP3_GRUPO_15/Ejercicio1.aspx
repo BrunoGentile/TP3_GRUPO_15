@@ -76,10 +76,6 @@
         .auto-style19 {
             height: 48px;
         }
-        .auto-style20 {
-            width: 255px;
-            height: 34px;
-        }
     </style>
 </head>
 <body>
@@ -141,13 +137,13 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -183,21 +179,21 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">Contraseña:</td>
-                <td class="auto-style3">
+                <td class="auto-style20"></td>
+                <td class="auto-style21">Contraseña:</td>
+                <td class="auto-style22">
                     <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasenia" ValidationGroup="grupo2" ErrorMessage="Ingrese una contraseña" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasenia" ValidationGroup="grupo2">Ingrese una contraseña</asp:RequiredFieldValidator>
                     <br />
-                    <asp:RegularExpressionValidator ID="revContrasenaCorta" runat="server" ControlToValidate="txtContrasenia" ErrorMessage="Ingrese una contraseña mayor a 6 dígitos" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\S{6,}">*</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="revContrasenaCorta" runat="server" ControlToValidate="txtContrasenia" ErrorMessage="RegularExpressionValidator" Font-Bold="False" ForeColor="#CC0000" ValidationExpression="\S{6,}">Ingrese una contraseña mayor a 6 dígitos</asp:RegularExpressionValidator>
                     <br />
                     <asp:CompareValidator ID="cvContrasenia" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtRepContrasenia" ErrorMessage="las contraseñas no coinciden" ValidationGroup="grupo2" ForeColor="#CC0000">*</asp:CompareValidator>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
+                <td class="auto-style23"></td>
             </tr>
             <tr>
                 <td class="auto-style5"></td>
@@ -206,7 +202,7 @@
                     <asp:TextBox ID="txtRepContrasenia" runat="server" TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style8">
-                    <asp:RequiredFieldValidator ID="rfvRepContrasenia" runat="server" ControlToValidate="txtRepContrasenia" ValidationGroup="grupo2" ErrorMessage="Repita la contraseña" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvRepContrasenia" runat="server" ControlToValidate="txtRepContrasenia" ValidationGroup="grupo2">Repita la contraseña</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style8"></td>
                 <td class="auto-style8"></td>
@@ -230,13 +226,11 @@
             <tr>
                 <td class="auto-style13"></td>
                 <td class="auto-style14">CP:</td>
-                <td class="auto-style20">
+                <td class="auto-style3">
                     <asp:TextBox ID="txtCp" runat="server" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style16">
-                    <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ValidationExpression="\d{4}" ValidationGroup="grupo2" ErrorMessage="ingrese un codigo postal valido" ForeColor="#CC0000">*</asp:RegularExpressionValidator>
-                    <br />
-                    <asp:RequiredFieldValidator ID="rfvCp" runat="server" ControlToValidate="txtCp" ErrorMessage="ingrese un codigo postal" ForeColor="#CC0000" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ValidationExpression="\d{4}" ValidationGroup="grupo2">Ingrese un código postal válido</asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style16"></td>
                 <td class="auto-style16"></td>

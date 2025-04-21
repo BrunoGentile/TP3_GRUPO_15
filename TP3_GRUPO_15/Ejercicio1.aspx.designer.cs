@@ -114,13 +114,13 @@ namespace TP3_GRUPO_15
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContrasenia;
 
         /// <summary>
-        /// Control revContrasenaCorta.
+        /// Control cvContraseniaMayorASeis.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revContrasenaCorta;
+        protected global::System.Web.UI.WebControls.CompareValidator cvContraseniaMayorASeis;
 
         /// <summary>
         /// Control cvContrasenia.
@@ -139,15 +139,6 @@ namespace TP3_GRUPO_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRepContrasenia;
-
-        /// <summary>
-        /// Control rfvRepContrasenia.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRepContrasenia;
 
         /// <summary>
         /// Control txtEmail.
@@ -193,15 +184,6 @@ namespace TP3_GRUPO_15
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revCp;
-
-        /// <summary>
-        /// Control rfvCp.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCp;
 
         /// <summary>
         /// Control ddlLocalidades.

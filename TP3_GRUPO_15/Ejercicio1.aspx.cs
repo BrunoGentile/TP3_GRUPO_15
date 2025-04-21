@@ -81,9 +81,9 @@ namespace TP3_GRUPO_15
 
                     ddlLocalidades.Items.Add(new ListItem(localidad));
                     txtLocalidades.Text = "";
+                }
             }
         }
-        
 
 
         protected void Btn_Localidad_Click(object sender, EventArgs e)
